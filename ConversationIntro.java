@@ -131,15 +131,11 @@ public class ConversationIntro {
   // do things word by word - String[] words = u_i.split(" ")
   public String mirrorWord(String s) {
     String[] words = s.split(" ");
-    for (int i = 0; i<words.length; i++) {
+    for (int i = 0; i < words.length; i++) {
       if (words[i] == "I") {
-        // element = "you";
-        // element.replace("I", "you");
         words[i] = "you";
       }
       else if (words[i] == "you") {
-        // element = "I";
-        // element.replace("you", "I");
         words[i] = "I";
       }
     }
